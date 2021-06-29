@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --sexyfont: " Titillium Web ", sans-serif;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  background-color: #f00000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar .logo img {
+  height: 48px;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.navbar .new {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.rider a {
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 32px;
+    padding: 18px;
+    overflow: hidden;
+  }
+  .navbar .new {
+    opacity: 1;
+    position: relative;
+    top: 26px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .navbar .new .rider {
+    margin: 14px;
+  }
+  .navbar .opacitynew {
+    top: -3px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 1;
+  }
+  .navbar .logo img {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    padding: 0px;
+  }
+  .navbar .burger {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+  }
+  .navbar .burger .sameline {
+    height: 4px;
+    width: 25px;
+    margin: 4px;
+    background-color: red;
+  }
+  .show {
+    height: 220px;
+  }
+}
+
+.videocontain {
+  position: relative;
+}
+
+.videocontain video {
+  margin: 10px 0px -88px 0px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  height: 450px;
+}
+
+.videocontain button {
+  position: absolute;
+  top: 250px;
+  left: 44%;
+  z-index: 2;
+  margin: 10px 0px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid grey;
+  background-color: red;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.videocontain button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.paradise {
+  top: 250px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  top: 200px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.swing {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .videocontain {
+    position: relative;
+    top: 10px;
+  }
+  .videocontain video {
+    top: 4px;
+    margin: 6px 0px 0px 0px;
+    width: 100%;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+  }
+  .videocontain button {
+    left: 30.5%;
+    margin: -8px 0px;
+  }
+  .paradise {
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    position: absolute;
+    height: 50pxs;
+    top: 140px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .swing {
+    display: block;
+  }
+}
+
+.infocontainer {
+  position: relative;
+  top: 80px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.infocontainer img {
+  width: 100%;
+}
+
+.infohead {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  margin: 25px;
+  text-align: center;
+}
+
+.infopara {
+  height: 300px;
+  overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.numberone {
+  overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.binakam {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .infocontainer {
+    top: 0px;
+  }
+  .infopara {
+    height: 300px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .showallman {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 740px;
+  }
+  .binakam {
+    display: block;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    font-size: 18px;
+    outline: none;
+    color: white;
+    background-color: red;
+  }
+}
+
+.aboutContainer img {
+  width: 100%;
+}
+
+.aboutContainer h4 {
+  margin-right: 15px;
+  text-align: end;
+}
+
+.aboutContainer h2 {
+  text-align: center;
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 5px 5px 5px red;
+          box-shadow: 5px 5px 5px red;
+  margin: 20px;
+}
+
+.aboutContainer .aboutpara {
+  font-family: "Titillium Web", sans-serif;
+  text-align: start;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.blogContainer h1 {
+  text-align: center;
+}
+
+.blogContainer h2 {
+  font-family: "Titillium Web", sans-serif;
+  color: #f32020;
+  text-align: center;
+  text-shadow: 1px 1px 2px #b17f7f;
+  border-bottom: 1px solid #7c7c7c;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+}
+
+.blogContainer img {
+  width: 100%;
+  padding: 2px 0px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 0px;
+}
+
+footer h5 {
+  color: white;
+  text-align: center;
+  padding: 0px;
+}
+
+.savcontainer {
+  margin: auto;
+  width: 90%;
+}
+
+.savcontainer .savpara {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.savcontainer .savimg {
+  height: 600px;
+  overflow: hidden;
+}
+
+.savcontainer .savimg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .savimg {
+    height: 250px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .savimg img {
+    height: 100%;
+  }
+}
+
+.signincontainer {
+  font-family: var(--sexyfont);
+  text-align: center;
+}
+
+.signincontainer .alertboxes {
+  display: none;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  height: 200px;
+  border-radius: 10px;
+  z-index: 2;
+  top: 200px;
+  left: 130px;
+}
+
+.signincontainer .alertboxes h2 {
+  margin: 70px 0px;
+  padding: 3px;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.signincontainer .alertboxes button {
+  background-color: white;
+  padding: 3px;
+  position: relative;
+  bottom: 80px;
+}
+
+.signincontainer .alertboxes button a {
+  text-decoration: none;
+  color: red;
+}
+
+.signincontainer input {
+  width: 80%;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--sexyfont);
+  opacity: 0.8;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 15px;
+}
+
+.signincontainer textarea {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid red;
+  width: 80%;
+  margin: 15px auto;
+  resize: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.signincontainer button {
+  width: 82%;
+  cursor: pointer;
+  padding: 5px;
+  margin: 15px auto;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  padding: 10px 12px;
+  background-color: red;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.signincontainer button:hover {
+  background-color: green;
+}
+
+@media screen and (max-width: 700px) {
+  .signincontainer .alertboxes {
+    left: 35px;
+    height: 300px;
+  }
+  .signincontainer .alertboxes button {
+    bottom: 50px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  padding: 0;
+  // height: 1500px;
+}
+:root {
+  --sexyfont: " Titillium Web ", sans-serif;
+}
+
+// --------------------------CSS FOR HEADER---------------------------
+.navbar {
+  display: flex;
+  height: 60px;
+  background-color: rgb(240, 0, 0);
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.4s ease-in-out;
+  .logo img {
+    height: 48px;
+    border-radius: 50%;
+    padding: 15px;
+  }
+
+  .new {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+}
+.rider a {
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    height: 32px;
+    padding: 18px;
+    overflow: hidden;
+    .new {
+      opacity: 1;
+      position: relative;
+      top: 26px;
+      flex-direction: column;
+      text-align: center;
+      transition: all 0.5s ease;
+
+      .rider {
+        margin: 14px;
+      }
+    }
+    .opacitynew {
+      top: -3px;
+      transition: all 0.5s ease;
+      opacity: 1;
+    }
+    .logo img {
+      position: absolute;
+      top: 10px;
+      left: 25px;
+      padding: 0px;
+    }
+    .burger {
+      position: absolute;
+      top: 18px;
+      right: 15px;
+      .sameline {
+        height: 4px;
+        width: 25px;
+        margin: 4px;
+        background-color: red;
+      }
+    }
+  }
+
+  .show {
+    height: 220px;
+  }
+}
+
+// --------------------------CSS FOR VIDEOS---------------------------
+
+.videocontain {
+  position: relative;
+  video {
+    margin: 10px 0px -88px 0px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 450px;
+  }
+  button {
+    position: absolute;
+    top: 250px;
+    left: 44%;
+    z-index: 2;
+    margin: 10px 0px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+
+    background-color: red;
+
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+    }
+  }
+}
+.paradise {
+  top: 250px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  top: 200px;
+  font-size: 40px;
+  text-align: center;
+}
+.swing {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .videocontain {
+    position: relative;
+    top: 10px;
+
+    video {
+      top: 4px;
+      margin: 6px 0px 0px 0px;
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    button {
+      left: 30.5%;
+      margin: -8px 0px;
+    }
+  }
+
+  .paradise {
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    position: absolute;
+    height: 50pxs;
+    top: 140px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .swing {
+    display: block;
+  }
+}
+// ---------------------------CSS INFO----------------------------
+.infocontainer {
+  position: relative;
+  top: 80px;
+  width: 90%;
+  margin: 10px auto;
+  img {
+    width: 100%;
+  }
+}
+.infohead {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  margin: 25px;
+  text-align: center;
+}
+.infopara {
+  height: 300px;
+  overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+.numberone {
+  overflow: hidden;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+}
+
+.binakam {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .infocontainer {
+    top: 0px;
+  }
+  .infopara {
+    height: 300px;
+    overflow: hidden;
+
+    transition: all 0.5s ease;
+  }
+  .showallman {
+    transition: all 0.5s ease;
+    height: 740px;
+  }
+  .binakam {
+    display: block;
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    font-size: 18px;
+    outline: none;
+    color: white;
+    background-color: red;
+  }
+}
+// -----------------------------CSS FOR ABOUT---------------------------
+.aboutContainer {
+  img {
+    width: 100%;
+  }
+  h4 {
+    margin-right: 15px;
+    text-align: end;
+  }
+
+  h2 {
+    text-align: center;
+    border-bottom: 1px solid red;
+    box-shadow: 5px 5px 5px red;
+    margin: 20px;
+  }
+  .aboutpara {
+    font-family: "Titillium Web", sans-serif;
+    text-align: start;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+// ------------------------CSS FOR BLOG-----------------------
+
+.blogContainer {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    font-family: "Titillium Web", sans-serif;
+    color: rgb(243, 32, 32);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(177, 127, 127);
+    border-bottom: 1px solid rgb(124, 124, 124);
+    box-shadow: 5px 5px 5px grey;
+  }
+  img {
+    width: 100%;
+    padding: 2px 0px;
+  }
+}
+
+// --------------------------FOOTER CSS------------------------
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 0px;
+  h5 {
+    color: white;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+// ---------------------------------SAVYA CSS----------------------------
+.savcontainer {
+  margin: auto;
+  width: 90%;
+  .savpara {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 18px;
+  }
+  .savimg {
+    height: 600px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .savimg {
+    height: 250px;
+    object-fit: contain;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+// -------------------------CSS FOR CONTACT------------------------
+.signincontainer {
+  font-family: var(--sexyfont);
+  text-align: center;
+  .alertboxes {
+    display: none;
+
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    height: 200px;
+    border-radius: 10px;
+    z-index: 2;
+    top: 200px;
+    left: 130px;
+    h2 {
+      margin: 70px 0px;
+      padding: 3px;
+      color: white;
+      font-family: "Titillium Web", sans-serif;
+    }
+    button {
+      background-color: white;
+      padding: 3px;
+      position: relative;
+      bottom: 80px;
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    }
+  }
+  input {
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--sexyfont);
+    opacity: 0.8;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 15px;
+  }
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid red;
+    width: 80%;
+    margin: 15px auto;
+    resize: none;
+    border-radius: 15px;
+    outline: none;
+  }
+  button {
+    width: 82%;
+    cursor: pointer;
+    padding: 5px;
+    margin: 15px auto;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    background-color: red;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: green;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .alertboxes {
+      left: 35px;
+      height: 300px;
+      button {
+        bottom: 50px;
+      }
+    }
+  }
+}
